@@ -1,16 +1,21 @@
-const getRandomAnswer = require( "./magic8Response");
+//DEPENDENCIES
+const { getRandomAnswer } = require( "./magic8Response.js");
 const express = require("express") 
+const supertest = require("supertest")
+
+//CONFIG.
 const app = express(); 
 
-app.listen(3000)
 
-app.get( "/", (req, res) => {
-    res.send("Hello World")
-});
+//ROUTES
+app.get('/', (req, res) =>{
+    res.status(200).send('Hello World')
+})
 
 app.get("/terminator", (req, res) => {
     res.send("I'll be Back")
 });
+
 
 app.get("/tim-gunn", (req, res) => {
     res.send("Make it Work")
@@ -43,5 +48,8 @@ app.get("/gollum", (req, res) => {
 
 app.get("/magic8", (req, res) => {
     const randomAnswer = getRandomAnswer()
-    res.render(`<h1>${randomAnswer}</h1>`)
+    console.log(randomAnswer)
+    res.send(`<h1>${randomAnswer}</h1>`)
 });
+
+module.exports = app

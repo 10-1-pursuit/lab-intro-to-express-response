@@ -2,10 +2,10 @@
   "name": "expressintro",
   "version": "1.0.0",
   "description": "Lesson",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "magic8Response.js",
-    "devStart": "nodemon app.js"
+    "test": "jest",
+    "devStart": "nodemon server.js"
   },
   "author": "XavierRice",
   "license": "ISC",

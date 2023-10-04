@@ -20,9 +20,11 @@
     "Very doubtful"
   ]
 
- function getRandomAnswer(){
+function getRandomAnswer(){
  return  magic8Response[Math.floor(Math.random() * 18)]
  }
 
  
-getRandomAnswer()
+module.exports = {
+    getRandomAnswer
+}
