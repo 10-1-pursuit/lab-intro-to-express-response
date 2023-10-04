@@ -1,0 +1,23 @@
+{
+  "name": "lab-intro-to-express-response",
+  "version": "1.0.0",
+  "description": "10.1 Pursuit Lab",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tru-salomon/lab-intro-to-express-response.git"
+  },
+  "keywords": [
+    "Express",
+    "Response"
+  ],
+  "author": "tru-salomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tru-salomon/lab-intro-to-express-response/issues"
+  },
+  "homepage": "https://github.com/tru-salomon/lab-intro-to-express-response#readme"
+}
