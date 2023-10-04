@@ -1,0 +1,17 @@
+{
+  "name": "expressintro",
+  "version": "1.0.0",
+  "description": "Lesson",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "devStart": "nodemon server.js"
+  },
+  "author": "XavierRice",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
