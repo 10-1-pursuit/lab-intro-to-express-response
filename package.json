@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tru-salomon/lab-intro-to-express-response/issues"
   },
-  "homepage": "https://github.com/tru-salomon/lab-intro-to-express-response#readme"
+  "homepage": "https://github.com/tru-salomon/lab-intro-to-express-response#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
