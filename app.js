@@ -1,12 +1,12 @@
 const express = require("express")
 
 const app = express()
-const PORT = 3003
+
 
 //HELLO WORLD
 
 app.get('/', (req,res) => {
-    res.send("Hewwo Worwd! owo")
+    res.status(418).send("Hewwo, Worwd! owo")
 })
 
 //CHARACTERS AND CATCHPHRASES
@@ -88,8 +88,7 @@ app.get('/magic8', (req,res) => {
     res.send(`<h1>${magic8Answer}</h1>`)
 })
 
-//APP LISTENER
 
-app.listen(PORT, () =>{
-    console.log(`Listening on port ${PORT}.`)
-})
+// EXPORT
+
+module.exports = app
