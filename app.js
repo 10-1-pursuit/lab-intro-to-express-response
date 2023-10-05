@@ -65,6 +65,6 @@ app.get('/magic8', (req,res) => {
       "Outlook not so good.",
       "Very doubtful." 
     ]    
-  const magic8Answer = magic8Responses[Math.floor(Math.random() * magic8Responses.length)];
-  res.send(`<h1>${magic8Answer}</h1>`)
+  const magic8OneAnswer = magic8Responses[Math.floor(Math.random() * magic8Responses.length)];
+  res.send(`<h1>${magic8OneAnswer}</h1>`)
 })
