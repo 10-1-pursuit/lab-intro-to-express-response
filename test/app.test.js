@@ -16,7 +16,7 @@ describe("Test the root path", () => {
   });
 });
 
-describe("Test the root path", () => {
+
   test("It should response the GET method", () => {
     return request(app)
       .get("/")
@@ -24,4 +24,12 @@ describe("Test the root path", () => {
         expect(response.statusCode).toBe(418);
       });
   });
-});
+
+
+  test("It should return `I'll be back` ", () => {
+    return request(app)
+      .get("/terminator")
+      .then((response) => {
+        expect(response.text).toBe("I'll be back");
+      });
+  });
