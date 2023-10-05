@@ -59,4 +59,15 @@ const magic8Responses = [
   app.get("/Homer-Simpson", (request,response)=>{
     response.send("D'Oh")
   })
+
+  app.get("/Fox-Mulder", (request, response)=>{
+    response.send("The truth is out there")
+  })
+
+  app.get("/magic8", (request, response)=>{
+    const randomIndex = Math.floor(Math.random() * magic8Responses.length)
+
+    const string =magic8Responses[randomIndex]
+    response.send(string)
+  })
   module.exports = app
