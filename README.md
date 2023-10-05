@@ -127,9 +127,9 @@ app.get('terminator', (req, res) => {
 ```
 
 What do you see in your browser?
- - Both messages?
- - One message (which one)
- - An error?
+ - Both messages? 
+ - One message (which one) | Just "I'll be back!"
+ - An error? "Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"
 
 Check terminal:
 
@@ -270,7 +270,7 @@ When it is a file we created, we must add the relative path to the file, based o
 
 #### Set up `package.json`
 
-We need to specify how to run the test. In `pakcage.json`, change the value of `test` inside the script object to be:
+We need to specify how to run the test. In `package.json`, change the value of `test` inside the script object to be:
 
 
 ```js
