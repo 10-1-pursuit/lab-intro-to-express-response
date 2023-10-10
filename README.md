@@ -76,8 +76,11 @@ Test by going to http://localhost:3003/tim-gunn
 
 **Thought questions**
 - What characters are allowed in a URL?
+Letters A-Z, a-z and numbers 0-9, some reserved characters
 - What happens if you try to create a URL `/tim gunn`
+Cannot get.
 - Is there a difference between `/timgunn` and `/TimGunn` and `/tim/gunn`?
+The capital doesn't matter byt the / does not work. 
 - If you have a phrase like `Here's looking at you, kid`, how do you deal with the `'` in `Here's`?
 
 <hr />
@@ -130,6 +133,7 @@ What do you see in your browser?
  - Both messages?
  - One message (which one)
  - An error?
+ I only see the first message
 
 Check terminal:
 
@@ -141,6 +145,8 @@ Check terminal:
 </details>
 
 What does this error message mean?
+
+you can only send one response per route.
 
 <details><summary>Hint/Reminder</summary>
 
