@@ -37,9 +37,9 @@ app.get("/lisa", (req, res) => {
 
 
 app.get("/tomatoes-onion", (req, res) => {
-        const tomatoOnionSoup = { ingredients: "🍅 => 🧅", price: 28.0, user: true };
-        res.send(tomatoOnionSoup);
-        res.send(soup());
+  const tomatoOnionSoup = { ingredients: "🍅 => 🧅", price: 28.0, user: true };
+  const soupResponse = soup(); // Assuming soup() is a function that returns something
+  res.send({ tomatoOnionSoup, soupResponse });
 });
 
 
@@ -68,3 +68,6 @@ app.get('/magic8', (req,res) => {
   const magic8OneAnswer = magic8Responses[Math.floor(Math.random() * magic8Responses.length)];
   res.send(`<h1>${magic8OneAnswer}</h1>`)
 })
+
+
+module.exports = app 
