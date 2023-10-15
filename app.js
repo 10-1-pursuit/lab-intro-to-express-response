@@ -3,7 +3,7 @@ const express = require("express")
 
 // Configuration
 const app = express()
-const PORT = 3003
+
 
 // Routes
 app.get("/", (request, response) => {
@@ -87,7 +87,5 @@ const magic8Responses = [
   });
 
 
-// Listen
-app.listen(PORT, ()=> {
-    console.log(`listen on port ${PORT}`)
-})
+// Export the app object
+module.exports = app;
