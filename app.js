@@ -91,6 +91,3 @@ const magic8Responses = [
 app.listen(PORT, ()=> {
     console.log(`listen on port ${PORT}`)
 })
-
-// EXPORT
-module.exports = app
