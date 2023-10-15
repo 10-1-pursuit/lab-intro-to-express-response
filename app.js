@@ -14,6 +14,11 @@ app.get("/terminator", (request, response) => {
     response.send("I'll be back");
   });
 
+app.get('/tim-gunn', (req, res) => {
+    res.send('Make it work')
+  })
+
+
 // Listen
 app.listen(PORT, ()=> {
     console.log(`listen on port ${PORT}`)
