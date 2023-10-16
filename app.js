@@ -1,7 +1,5 @@
 // DEPENDENCIES
 const express = require('express');
-
-// CONFIGURATION
 const app = express();
 const PORT = 3003;
 
@@ -11,6 +9,6 @@ app.get('/', (request, response) => {
 })
 
 // LISTEN
-app.listen(3003, () => {
+app.listen(8888, () => {
     console.log("Listening for requests on port ${PORT}'hands up!!'");
 })
