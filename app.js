@@ -1,14 +1,17 @@
 // DEPENDENCIES
-const express = require('express');
-const app = express();
-const PORT = 3003;
+const express = require('express')
+const app = express()
+
+// CONFIGURATION
+const = app express()
+const PORT = 3003
 
 // ROUTES
 app.get('/', (request, response) => {
-    response.send('Hello my Fellows in cohort 10.1!!');
+    response.send('Hello my Fellows in Cohort 10.1!!')
 })
 
 // LISTEN
-app.listen(8888, () => {
-    console.log("Listening for requests on port ${PORT}'hands up!!'");
+app.listen(PORT, () => {
+    console.log("Listening for requests on port ${PORT}")
 })
