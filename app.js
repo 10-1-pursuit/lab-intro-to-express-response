@@ -1,9 +1,8 @@
 // DEPENDENCIES
 const express = require('express')
-const app = express()
 
 // CONFIGURATION
-const = app express()
+const app = express()
 const PORT = 3003
 
 // ROUTES
