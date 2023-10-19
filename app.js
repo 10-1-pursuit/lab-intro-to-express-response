@@ -7,11 +7,12 @@ const PORT = 3003
 
 // ROUTES
 app.get('/', (req, res) => {
-    res.send('Hello my Fellows in Cohort 10.1!!')
+    res.send('Hello my Fellows in Cohort 10.1 and 10.2!!')
 })
 
 app.get('/terminator', (req, res) => {
     res.send('I\'ll be back!')
+    res.send('Hasta la vista, baby!')
 })
 
 app.get('/bruce-willis', (req, res) => {
