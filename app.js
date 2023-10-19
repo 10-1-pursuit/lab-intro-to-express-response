@@ -23,12 +23,12 @@ const magic8Responses = [
     "My sources say no",
     "Outlook not so good",
     "Very doubtful"
-  
-  ]
 
-// app.get("/", (req, res) => {
-//     res.send("Hello, Express")
-// });
+]
+
+app.get("/", (req, res) => {
+    res.send("Hello, Express")
+});
 
 app.get('/Terminator', (req, res) => {
     res.send("I'll be back ,  Hasta la vista, baby")
@@ -71,8 +71,11 @@ app.get("/Frankenstein", (req, res) => {
     res.send("It's alive! It's alive")
 });
 
-app.get("/magic8", (req,res)=> {
-    res.send(`<h1>${magic8Answer}</h1>`)})
+app.get("/magic8", (req, res) => {
+    const magic8Answer = magic8Responses[Math.floor(Math.random() * magic8Responses.length)]
+    res.send(`<h1>${magic8Answer}</h1>`)
+})
+
 app.listen(3003, () => {
     console.log("Listening for requests on port 3003");
 });
