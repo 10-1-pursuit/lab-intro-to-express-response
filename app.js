@@ -5,6 +5,8 @@ const express = require('express')
 const app = express()
 const PORT = 3003
 
+
+
 // ROUTES
 app.get('/', (req, res) => {
     res.send('Hello my Fellows in Cohort 10.1 and 10.2!!')
@@ -31,8 +33,8 @@ app.get('/dorothy', (req, res) => {
     res.send('Toto, I\'ve got a feeling we\'re not in Kansas anymore!')
 })
 
-app.get('/dean-winchester', (req, res) => {
-    res.send('Awesome!')
+app.get('/robin-williams', (req, res) => {
+    res.send('Good morning, Vietnam!')
 })
 
 app.get('/gene-kelly', (req, res) => {
@@ -46,6 +48,38 @@ app.get('/pharrell-williams', (req, res) => {
 app.get('/gloria-gaynor', (req, res) => {
     res.send('I will survive!')
 })
+
+app.get('/magic8', (req, res) => {
+    
+    const magic8Responses = [
+        "It is certain",
+        "It is decidedly so",
+        "Without a doubt",
+        "Yes - Definitely",
+        "You may rely on it",
+        "As I see it, yes",
+        "Most likely",
+        "Outlook good",
+        "Yes, and signs point to yes",
+        "Reply hazy, try again",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+        "Concentrate and ask again",
+        "Don't count on it",
+        "My reply is no",
+        "My sources say no",
+        "Outlook not so good",
+        "Very doubtful"
+      
+      ]
+    
+      let ranmagic = magic8Responses[Math.floor(Math.random() * magic8Responses.length)]
+    
+    res.send(ranmagic)
+})
+
+
 
 // LISTEN
 app.listen(PORT, () => {
