@@ -54,10 +54,44 @@ app.get("/show-girls", (request, response) => {
   );
 });
 
+app.get("/magic8", (request, response) => {
+  response.send(
+    magic8Responses[Math.floor(Math.random() * magic8Responses.length)]
+  );
+});
+
+// STRETCH
+app.get("/magic8-h1", (request, response) => {
+  let index = Math.floor(Math.random() * magic8Responses.length);
+  response.send(`<h1>${magic8Responses[index]}</h1>`);
+});
+
 // LISTEN
 app.listen(PORT, () => {
   console.log("listening on port ${PORT}");
 });
+
+const magic8Responses = [
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes - Definitely",
+  "You may rely on it",
+  "As I see it, yes",
+  "Most likely",
+  "Outlook good",
+  "Yes, and signs point to yes",
+  "Reply hazy, try again",
+  "Ask again later",
+  "Better not tell you now",
+  "Cannot predict now",
+  "Concentrate and ask again",
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no",
+  "Outlook not so good",
+  "Very doubtful"
+];
 
 // EXPORT
 module.exports = app;
